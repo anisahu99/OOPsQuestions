@@ -1,0 +1,1 @@
+After writing a custom constructor in C++/Java, the default constructor is no longer provided automatically by the compiler. This is because the presence of a custom constructor suppresses the automatic generation of the default constructor.
