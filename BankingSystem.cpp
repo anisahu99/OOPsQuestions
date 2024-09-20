@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// Encapsulation with real world example
 class BankAccount {
 private:
     // Encapsulated data (hidden from outside)
@@ -42,6 +42,7 @@ public:
 
 int main() {
     BankAccount myAccount(1000); // Initial balance of $1000
+    
 
     // Interacting with the account through methods
     myAccount.deposit(500);      // Deposits $500
