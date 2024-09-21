@@ -34,3 +34,7 @@ To access the static data member of any class we have to define it first and sta
 A static member function can only access static data member, other static member functions and any other functions from outside the class.
 
 Static member functions have a class scope and they do not have access to the 'this'(this->non-static-attribute-of-class) pointer of the class.
+
+// Friend function and Classes
+
+A friend class can access private and protected members of other class in which it is declared as friend.
