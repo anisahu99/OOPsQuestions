@@ -39,3 +39,7 @@ Static member functions have a class scope and they do not have access to the 't
 
 A friend class can access private and protected members of other class in which it is declared as friend.
 A friend function can also be given special grant to access private and protected members.
+A friend can be:
+a) a method of another class
+b) a global function
+link: "https://www.geeksforgeeks.org/friend-class-function-cpp/"
