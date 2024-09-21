@@ -14,3 +14,18 @@ The error occurs because you declared the constructor Triplet() as const. When y
 public - members are accessible from outside the class
 private - members cannot be accessed (or viewed) from outside the class
 protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes.
+
+// Static Data Members: Link:- "https://www.geeksforgeeks.org/cpp-static-data-members/"
+
+Static data members are class members that are declared using static keywords. A static member has certain special characteristics which are as follows:
+
+    Only one copy of that member is created for the entire class and is shared by all the objects of that class, no matter how many objects are created.
+    It is initialized before any object of this class is created, even before the main starts outside the class itself.
+    It is visible can be controlled with the class access specifiers.
+    Its lifetime is the entire program.
+
+Defining Static Data Member
+
+As told earlier, the static members are only declared in the class declaration. If we try to access the static data member without an explicit definition, the compiler will give an error.
+
+To access the static data member of any class we have to define it first and static data members are defined outside the class definition. The only exception to this are static const data members of integral type which can be initialized in the class declaration.
