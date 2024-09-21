@@ -10,7 +10,7 @@ class Calculator{
     Calculator(); // Constructor Declaration
     int addTwoNumber( const int &x, const int &y ); // Method Declaration
 };
-
+// :: ---> Scope Resolution
 Calculator::Calculator(){
 cout<<"Hello"<<endl;
 }
