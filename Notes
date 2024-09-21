@@ -29,3 +29,8 @@ Defining Static Data Member
 As told earlier, the static members are only declared in the class declaration. If we try to access the static data member without an explicit definition, the compiler will give an error.
 
 To access the static data member of any class we have to define it first and static data members are defined outside the class definition. The only exception to this are static const data members of integral type which can be initialized in the class declaration.
+
+// Static Method
+A static member function can only access static data member, other static member functions and any other functions from outside the class.
+
+Static member functions have a class scope and they do not have access to the 'this'(this->non-static-attribute-of-class) pointer of the class.
