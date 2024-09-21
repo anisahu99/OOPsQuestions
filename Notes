@@ -1,1 +1,12 @@
 After writing a custom constructor in C++/Java, the default constructor is no longer provided automatically by the compiler. This is because the presence of a custom constructor suppresses the automatic generation of the default constructor.
+
+struct Triplet
+{
+    int first, second;
+    Triplet()const{
+/*
+The error occurs because you declared the constructor Triplet() as const. When you mark a constructor/destructor as const, it means that the constructor/destructor is not allowed to modify any member variables of the class. However, a constructor's primary purpose is to initialize (modify) the member variables of the object, which makes the const qualifier inappropriate for constructors/destructors.
+*/
+        
+    }
+};
