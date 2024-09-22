@@ -11,9 +11,20 @@ The error occurs because you declared the constructor Triplet() as const. When y
     }
 };
 
+
+
+
+
 public - members are accessible from outside the class
 private - members cannot be accessed (or viewed) from outside the class
 protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes.
+
+
+
+
+
+
+
 
 // Static Data Members: Link:- "https://www.geeksforgeeks.org/cpp-static-data-members/"
 
@@ -35,6 +46,10 @@ A static member function can only access static data member, other static member
 
 Static member functions have a class scope and they do not have access to the 'this'(this->non-static-attribute-of-class) pointer of the class.
 
+
+
+
+
 // Friend function and Classes
 
 A friend class can access private and protected members of other class in which it is declared as friend.
@@ -43,3 +58,20 @@ A friend can be:
 a) a method of another class
 b) a global function
 link: "https://www.geeksforgeeks.org/friend-class-function-cpp/"
+
+
+
+
+
+// Const Member function in Classes in C++
+Why are const Functions used in C++?
+
+We use const member functions in C++ to avoid accidental object changes. It is highly recommended to make as many functions const as possible so that the chances of error in the program are minimal.
+Const Member Function Use Cases
+
+The two use cases of the const member function are as follows:
+
+    A const member function is called by any type of object, i.e., either by a const or a non-const object.
+    A non-const function can only be called by a non-const object, and a const function cannot call it.
+
+
