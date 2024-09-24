@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+/*
+  In C++, an lvalue (locator value) refers to an object that occupies some identifiable location in memory. 
+*/
+
+
+int main(){
+
+
+/*
+  lvalue: Anything that refers to a memory location is considered an lvalue. An lvalue can appear on the left-hand side of an assignment expression.
+*/
+
+  int x = 5;  // 'x' is an lvalue because it refers to a memory location
+  x = 10;     // valid: we can assign to 'x'
+
+
+/*
+  rvalue: An rvalue is a temporary object or a value that doesn't have a memory address that you can access directly. It usually appears on the right-hand side of an assignment             expression.
+*/
+
+  int y = 5 + 10;  // '5 + 10' is an rvalue, a temporary value with no permanent memory address
+
+
+  return 0;
+}
