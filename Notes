@@ -75,3 +75,10 @@ The two use cases of the const member function are as follows:
     A non-const function can only be called by a non-const object, and a const function cannot call it.
 
 
+
+
+// Virtual Inheritance
+
+Virtual Inheritance:
+
+Virtual inheritance is used to solve the diamond problem in multiple inheritance, where a class inherits from two classes that share a common base class. In this case, the use of virtual doesn't impact much since there's no multiple inheritance, but it's a good practice to avoid ambiguity in more complex scenarios.
